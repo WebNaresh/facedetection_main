@@ -1,0 +1,14 @@
+
+End-User License Agreement (EULA) of FaceDetection
+
+This End-User License Agreement ("EULA") is a legal agreement between you and FaceDetection.
+
+This EULA agreement governs your acquisition and use of our FaceDetection software ("Software") directly from FaceDetection or indirectly through a FaceDetection authorized reseller or distributor (a "Reseller").
+
+Please read this EULA agreement carefully before completing the installation process and using the FaceDetection software. It provides a license to use the FaceDetection software and contains warranty information and liability disclaimers.
+
+If you register for a free trial of the FaceDetection software, this EULA agreement will also govern that trial. By clicking "accept" or installing and/or using the FaceDetection software, you are confirming your acceptance of the Software and agreeing to become bound by the terms of this EULA agreement.
+
+If you do not agree to be bound by this EULA agreement, do not install or use the Software.
+
+// ...additional license terms...
