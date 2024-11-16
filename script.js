@@ -198,8 +198,6 @@ async function processGalleryImages(files) {
   const threshold =
     parseFloat(document.getElementById("threshold").value) || 0.6;
   generateReport(detectedFaces, threshold, galleryFiles, thiefFile);
-
-  showFinalPopup(); // Show the final popup with the results
 }
 
 function previewThiefImage(input) {
@@ -377,30 +375,3 @@ window.onload = function () {
   updateDateTime();
   setInterval(updateDateTime, 1000);
 };
-
-function showFinalPopup() {
-  const totalImages = galleryFiles.length;
-  const matchedImages = detectedFaces.filter((face) => face.isMatch).length;
-  const message =
-    matchedImages > 0
-      ? `${matchedImages} similar images found out of ${totalImages} images.`
-      : "No similar images found.";
-  const popupColor = matchedImages > 0 ? "green" : "red";
-
-  const popup = document.createElement("div");
-  popup.style.position = "fixed";
-  popup.style.bottom = "20px";
-  popup.style.right = "20px";
-  popup.style.padding = "20px";
-  popup.style.backgroundColor = popupColor;
-  popup.style.color = "white";
-  popup.style.borderRadius = "5px";
-  popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
-  popup.textContent = message;
-
-  document.body.appendChild(popup);
-
-  setTimeout(() => {
-    document.body.removeChild(popup);
-  }, 5000);
-}
